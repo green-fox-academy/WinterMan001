@@ -1,23 +1,23 @@
 public class Matrix {
     public static void main(String[] Args) {
-        // - Create (dynamically) a two dimensional array
-        //   with the following matrix. Use a loop!
-        //
-        //   1 0 0 0
-        //   0 1 0 0
-        //   0 0 1 0
-        //   0 0 0 1
-        //
-        // - Print this two dimensional array to the output
         int[][] matrix = new int[4][4];
-
         for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[i].length; j++){
-                matrix[i][j] = i * j;
-                System.out.println(matrix[i][j] + "\t");
+            for (int j = 0; j < matrix[i].length; j++) {
+                if (i == j) {
+                    matrix[i][j] = 1;
+                } else {
+                    matrix[1][0] = 0;
+                }
+            }
 
         }
-        System.out.println();
+        for (int[] array : matrix) {
+            for (int element : array) {
+                System.out.println(element + " ");
+
             }
+            System.out.println();
+
         }
     }
+}
