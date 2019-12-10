@@ -24,7 +24,7 @@ public class PersonalFinance {
 
             double average = sum / expenses.size();
             System.out.println("The average is : " + average);
-        
+
 
 
 
