@@ -4,12 +4,12 @@ import java.awt.*;
 
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
-public class drawDiagonals {
-    public static void mainDraw(Graphics graphics){
-        // draw a red horizontal line to the canvas' middle.
-        // draw a green vertical line to the canvas' middle.
+public class centeredSquare {
+
+    public static void mainDraw(Graphics graphics) {
+        // Draw a green 10x10 square to the canvas' center.
         graphics.setColor(Color.GREEN);
-        graphics.drawLine(10,10,100,100);
+        graphics.fillRect(WIDTH/2,HEIGHT/2, 10,10);
 
 
     }
@@ -33,8 +33,7 @@ public class drawDiagonals {
         @Override
         protected void paintComponent(Graphics graphics) {
             super.paintComponent(graphics);
-
-
+            this.setBackground(Color.WHITE);
 
             mainDraw(graphics);
         }

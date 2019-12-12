@@ -4,13 +4,12 @@ import java.awt.*;
 
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
-public class drawDiagonals {
-    public static void mainDraw(Graphics graphics){
-        // draw a red horizontal line to the canvas' middle.
-        // draw a green vertical line to the canvas' middle.
-        graphics.setColor(Color.GREEN);
-        graphics.drawLine(10,10,100,100);
-
+public class RainbowBoxFunction {
+    public static void mainDraw(Graphics graphics) {
+        // Create a square drawing function that takes 3 parameters:
+        // The square size, the fill color, graphics
+        // and draws a square of that size and color to the center of the canvas.
+        // Create a loop that fills the canvas with rainbow colored squares (red, orange, yellow, green, blue, indigo, violet).
 
     }
 
@@ -33,9 +32,6 @@ public class drawDiagonals {
         @Override
         protected void paintComponent(Graphics graphics) {
             super.paintComponent(graphics);
-
-
-
             mainDraw(graphics);
         }
     }

@@ -4,12 +4,19 @@ import java.awt.*;
 
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
-public class drawDiagonals {
+public class FourRectangles {
+
     public static void mainDraw(Graphics graphics){
-        // draw a red horizontal line to the canvas' middle.
-        // draw a green vertical line to the canvas' middle.
+        // draw four different size and color rectangles.
+        // avoid code duplication.
         graphics.setColor(Color.GREEN);
-        graphics.drawLine(10,10,100,100);
+        graphics.drawRect(1,10,142,100);
+        graphics.setColor(Color.BLUE);
+        graphics.drawRect(10,100,10,100);
+        graphics.setColor(Color.YELLOW);
+        graphics.drawRect(12,100,110,100);
+        graphics.setColor(Color.RED);
+        graphics.drawRect(23,32,322,433);
 
 
     }
@@ -33,9 +40,6 @@ public class drawDiagonals {
         @Override
         protected void paintComponent(Graphics graphics) {
             super.paintComponent(graphics);
-
-
-
             mainDraw(graphics);
         }
     }

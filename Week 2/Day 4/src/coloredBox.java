@@ -9,6 +9,8 @@ public class coloredBox {
         // draw a red horizontal line to the canvas' middle.
         // draw a green vertical line to the canvas' middle.
 
+        graphics.setColor(Color.BLUE);
+        graphics.fillRect (25,25,100,100);
 
     }
 
@@ -32,12 +34,6 @@ public class coloredBox {
         protected void paintComponent(Graphics graphics) {
             super.paintComponent(graphics);
             this.setBackground(Color.WHITE);
-            graphics.setColor(Color.BLUE);
-            graphics.fillRect (25,25,100,100);
-
-
-
-
             mainDraw(graphics);
         }
     }

@@ -8,7 +8,8 @@ public class LineInTheMiddle {
     public static void mainDraw(Graphics graphics){
         // draw a red horizontal line to the canvas' middle.
         // draw a green vertical line to the canvas' middle.
-
+        graphics.setColor(Color.GREEN);
+        graphics.drawLine(0,100,100,100);
 
     }
 
@@ -31,8 +32,7 @@ public class LineInTheMiddle {
         @Override
         protected void paintComponent(Graphics graphics) {
             super.paintComponent(graphics);
-            graphics.setColor(Color.GREEN);
-            graphics.drawLine(0,100,100,100);
+
 
 
             mainDraw(graphics);
