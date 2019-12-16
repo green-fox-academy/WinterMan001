@@ -1,6 +1,6 @@
 public class Pyramid {
     public static void main(String[] Args) {
-        int n = 5;
+        int n = 100;
 
         for (int i = 1; i <= n; i++) {
             for (int j = 0; j < n - i; j++) {
