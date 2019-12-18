@@ -5,41 +5,15 @@ import org.w3c.dom.ls.LSOutput;
 public class fák {
     public static void main(String[] Args) {
 
-        milyenFák malusAngustifolia = new milyenFák();
-        malusAngustifolia.age = 2;
-        malusAngustifolia.leafColor = "Zöld";
-        malusAngustifolia.sex = "egylaki";
-        malusAngustifolia.törzs = "Magnoliophyta";
+
+        Tree tree = new Tree();
+        tree.setAge(344);
 
 
-        milyenFák pinusSylvestris = new milyenFák();
-        pinusSylvestris.age = 3;
-        pinusSylvestris.leafColor = "Ezüst zöld";
-        pinusSylvestris.sex = "egylaki";
-        pinusSylvestris.törzs = "Toboztermők";
 
+        System.out.println(tree.getAge());
+        Tree tree2 = new Tree("oak", "brown", 54, "f");
 
-        milyenFák tomfa = new milyenFák();
-        tomfa.age = 34;
-        tomfa.sex = "kétlaki";
-        tomfa.törzs = "lol";
-        tomfa.leafColor = "Barna";
-
-
-        milyenFák gingkoBiloba = new milyenFák();
-        gingkoBiloba.leafColor = "kék";
-        gingkoBiloba.törzs = "azthiszem";
-        gingkoBiloba.sex = "Kétlaki";
-        gingkoBiloba.age = 32;
-
-        milyenFák randomFa = new milyenFák();
-        randomFa.age = 23;
-        randomFa.törzs = "Aristolochiales";
-        randomFa.leafColor = "Nincs levele..";
-        randomFa.sex = "++.";
-
-
-        System.out.println(randomFa.sex);
     }
 
 
